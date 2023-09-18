@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MyDisplay from './MyDisplay';
+import MyCounter from './MyCounter';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(
+  document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <MyCounter />
   </React.StrictMode>
 );
 
