@@ -9,12 +9,13 @@ import Employee from './Employee';
 import { User } from './User';
 import Registraion from './Registraion';
 import Login from './Login';
+import ManageEmployee from './ManageEmployee';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Login />
+    <ManageEmployee />
   </React.StrictMode>
 );
 

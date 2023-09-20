@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import DisplayData from './DisplayData'
 
 export default function Employee() {
 
@@ -17,9 +18,13 @@ export default function Employee() {
     <table>
         
         {
-            data.map((value)=> {
+            data.map((value,index)=> {
 
-                return(<tr><td>{value.body}</td></tr>)
+                return(<DisplayData 
+                    val={value}
+                    myindex={index}
+                
+                ></DisplayData>)
 
             })
         }
