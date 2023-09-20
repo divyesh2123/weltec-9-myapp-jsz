@@ -5,12 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MyDisplay from './MyDisplay';
 import MyCounter from './MyCounter';
+import Employee from './Employee';
+import { User } from './User';
+import Registraion from './Registraion';
+import Login from './Login';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <MyCounter />
+    <Login />
   </React.StrictMode>
 );
 
