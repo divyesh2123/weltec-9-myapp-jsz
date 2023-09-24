@@ -10,12 +10,14 @@ import { User } from './User';
 import Registraion from './Registraion';
 import Login from './Login';
 import ManageEmployee from './ManageEmployee';
+import ListAccount from './ListAccount';
+import   './global.js'
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ManageEmployee />
+    <ListAccount />
   </React.StrictMode>
 );
 
