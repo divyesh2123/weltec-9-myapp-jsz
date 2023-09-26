@@ -13,12 +13,15 @@ import ManageEmployee from './ManageEmployee';
 import ListAccount from './ListAccount';
 import   './global.js'
 import ListWithAuthorization from './ListWithAuthorization';
+import FormikWithValidation from './FormikWithValidation';
+import BasicWithoutField from './BasicWithoutField';
+import SignupForm from './FormikWithHook';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ListWithAuthorization />
+    <SignupForm />
   </React.StrictMode>
 );
 
