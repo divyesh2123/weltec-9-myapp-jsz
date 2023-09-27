@@ -1,11 +1,12 @@
 import logo from './logo.svg';
-import './App.css';
+
 import Basic from './Basic';
+import MyEmp from './MyEmp';
 
 function App() {
   return (
     <div className="App">
-      <Basic/>
+      <MyEmp/>
     </div>
   );
 }

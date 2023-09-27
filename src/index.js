@@ -16,12 +16,15 @@ import ListWithAuthorization from './ListWithAuthorization';
 import FormikWithValidation from './FormikWithValidation';
 import BasicWithoutField from './BasicWithoutField';
 import SignupForm from './FormikWithHook';
+import EmployeeWithYup from './EmployeeWithYup';
+import MyEmp from './MyEmp';
+import DynamicForm from './DynamicForm';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <SignupForm />
+    <DynamicForm />
   </React.StrictMode>
 );
 
