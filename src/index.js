@@ -19,12 +19,13 @@ import SignupForm from './FormikWithHook';
 import EmployeeWithYup from './EmployeeWithYup';
 import MyEmp from './MyEmp';
 import DynamicForm from './DynamicForm';
+import FullFormFunction from './FullFormFunction';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <DynamicForm />
+    <FullFormFunction />
   </React.StrictMode>
 );
 
