@@ -20,12 +20,14 @@ import EmployeeWithYup from './EmployeeWithYup';
 import MyEmp from './MyEmp';
 import DynamicForm from './DynamicForm';
 import FullFormFunction from './FullFormFunction';
+import BasicForm from './BasicForm';
+import ToDoList from './ToDoList';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <ToDoList />
   </React.StrictMode>
 );
 
