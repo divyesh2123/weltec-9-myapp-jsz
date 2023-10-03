@@ -22,12 +22,13 @@ import DynamicForm from './DynamicForm';
 import FullFormFunction from './FullFormFunction';
 import BasicForm from './BasicForm';
 import ToDoList from './ToDoList';
+import Parent from './Parent';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ToDoList />
+    <App />
   </React.StrictMode>
 );
 

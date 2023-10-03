@@ -3,23 +3,23 @@ import { useForm } from 'react-hook-form';
 
 import Basic from './Basic';
 import MyEmp from './MyEmp';
+import { useState } from 'react';
+import LanguageContext from './Language';
+import NabBar from './NabBar';
+import MyForm from './MyForm';
 
 function App() {
 
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
+   const [data,setData] = useState('EN');
   return (
-    <form onSubmit={handleSubmit((data) => console.log(data))}>
-    <input {...register('firstName')} />
-    <input {...register('lastName', { required: true })} />
-    {errors.lastName && <p>Last name is required.</p>}
-    <input {...register('age', { pattern: /\d+/ })} />
-    {errors.age && <p>Please enter number for age.</p>}
-    <input type="submit" />
-  </form>
+    <LanguageContext.Provider value={{data,setData}}>
+
+      <NabBar/>
+
+      <MyForm/>
+
+    </LanguageContext.Provider>
+  
   );
 }
 
