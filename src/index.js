@@ -23,12 +23,15 @@ import FullFormFunction from './FullFormFunction';
 import BasicForm from './BasicForm';
 import ToDoList from './ToDoList';
 import Parent from './Parent';
+import ShowMoreTextToggle from './ShowMoreTextToggle';
+import DisplayMyData from './DisplayMyData';
+import RemiderList from './RemiderList';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RemiderList/>
   </React.StrictMode>
 );
 
