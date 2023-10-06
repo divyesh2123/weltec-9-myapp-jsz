@@ -1,37 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+
 import reportWebVitals from './reportWebVitals';
-import MyDisplay from './MyDisplay';
-import MyCounter from './MyCounter';
-import Employee from './Employee';
-import { User } from './User';
-import Registraion from './Registraion';
-import Login from './Login';
-import ManageEmployee from './ManageEmployee';
-import ListAccount from './ListAccount';
+
+
 import   './global.js'
-import ListWithAuthorization from './ListWithAuthorization';
-import FormikWithValidation from './FormikWithValidation';
-import BasicWithoutField from './BasicWithoutField';
-import SignupForm from './FormikWithHook';
-import EmployeeWithYup from './EmployeeWithYup';
-import MyEmp from './MyEmp';
-import DynamicForm from './DynamicForm';
-import FullFormFunction from './FullFormFunction';
-import BasicForm from './BasicForm';
-import ToDoList from './ToDoList';
-import Parent from './Parent';
-import ShowMoreTextToggle from './ShowMoreTextToggle';
-import DisplayMyData from './DisplayMyData';
-import RemiderList from './RemiderList';
+
+import Appointment from './Appointment';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <RemiderList/>
+    <Appointment/>
   </React.StrictMode>
 );
 
