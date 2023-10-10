@@ -7,12 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import   './global.js'
 
 import Appointment from './Appointment';
+import Product from './Product';
+import ManageProduct from './ManageProduct';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Appointment/>
+    <ManageProduct/>
   </React.StrictMode>
 );
 
