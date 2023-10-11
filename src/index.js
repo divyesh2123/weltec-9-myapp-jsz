@@ -9,12 +9,18 @@ import   './global.js'
 import Appointment from './Appointment';
 import Product from './Product';
 import ManageProduct from './ManageProduct';
+import Counter from './Counter';
+import { Provider } from 'react-redux';
+import store from './store/store';
+import UserR from './UserR';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <ManageProduct/>
+    <Provider store={store}>
+    <UserR/>
+    </Provider>
   </React.StrictMode>
 );
 
