@@ -13,13 +13,14 @@ import Counter from './Counter';
 import { Provider } from 'react-redux';
 import store from './store/store';
 import UserR from './UserR';
+import MyUser from './MyUser';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <UserR/>
+    <MyUser/>
     </Provider>
   </React.StrictMode>
 );
