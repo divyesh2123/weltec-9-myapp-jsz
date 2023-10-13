@@ -21,6 +21,7 @@
     "react-scripts": "5.0.1",
     "react-select": "^5.7.5",
     "redux": "^4.2.1",
+    "redux-saga": "^1.2.3",
     "redux-thunk": "^2.4.2",
     "shortid": "^2.2.16",
     "sweetalert": "^2.1.2",
