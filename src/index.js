@@ -15,13 +15,14 @@ import store from './store/store';
 import UserR from './UserR';
 import MyUser from './MyUser';
 import MyCounterSaga from './MyCounterSaga';
+import SagaUser from './SagaUser';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <MyCounterSaga/>
+    <SagaUser/>
     </Provider>
   </React.StrictMode>
 );
