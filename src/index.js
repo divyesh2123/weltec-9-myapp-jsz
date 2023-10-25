@@ -16,6 +16,7 @@ import UserR from './UserR';
 import MyUser from './MyUser';
 import MyCounterSaga from './MyCounterSaga';
 import SagaUser from './SagaUser';
+import CounterRef from './CounterRef';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
@@ -23,6 +24,7 @@ root.render(
   <React.StrictMode>
     <Provider store={store}>
     <SagaUser/>
+    <CounterRef/>
     </Provider>
   </React.StrictMode>
 );
