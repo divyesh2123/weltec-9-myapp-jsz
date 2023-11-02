@@ -17,14 +17,25 @@ import MyUser from './MyUser';
 import MyCounterSaga from './MyCounterSaga';
 import SagaUser from './SagaUser';
 import CounterRef from './CounterRef';
+import MyCounterClass from './MyCounterClass';
+import Test from './Test';
+import MyButton from './MyButton';
+import DisCh from './DisCh';
+import BuggyCounnter from './BuggyCounnter';
+import ErrorBoundary from './ErrorBoundary';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Provider store={store}>
-    <SagaUser/>
-    <CounterRef/>
+   
+   <ErrorBoundary>
+
+   <BuggyCounnter/>
+
+   </ErrorBoundary>
+    
     </Provider>
   </React.StrictMode>
 );
