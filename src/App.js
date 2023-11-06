@@ -6,6 +6,7 @@ import Consult from './Consult';
 import { Link, Route, Routes } from 'react-router-dom';
 import About from './About';
 import Service from './Service';
+import MyRoutes from './MyRoutes';
 
 function App() {
 
@@ -27,14 +28,7 @@ function App() {
       </ul>
     </nav>
 
-    <Routes>
-      <Route   path="/" element={ <RoutingHome/> } />
-      <Route path="service/*" element={ <Service/> }>
-             <Route path="development" element={ <Development/> } />
-             <Route path="consult" element={ <Consult/> } />              
-      </Route>
-      <Route path="about" element={ <About/> } />         
-    </Routes>   
+    {MyRoutes()}
   </div>
    
   
